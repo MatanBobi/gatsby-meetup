@@ -1,0 +1,48 @@
+body {
+  background-color: #131217;
+  color: rgba(255,255,255,0.7);
+  margin: 0;
+}
+
+.page-container {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+.header {
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
+.app-header {
+  background-color: #ff0266;
+  color: white;
+}
+
+.app-header,
+.app-footer {
+  padding: 10px;
+  width: 100%;
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #232129;
+}
+
+.sidebar,
+.content,
+.header {
+  background-color: #232129;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+ul {
+    list-style-type: none; 
+}
