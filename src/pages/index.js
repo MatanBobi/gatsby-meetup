@@ -1,6 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from 'styled-components'
 import "../styles/index.css"
+
+const StyledLi = styled.li`
+  background: pink;
+`
+
 export default function Home() {
   return (
     <>
