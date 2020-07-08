@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 export default ({ pageHeader, children }) => {
   const data = useStaticQuery(graphql`
-    {
+    query SiteQuery {
       site {
         siteMetadata {
           title
