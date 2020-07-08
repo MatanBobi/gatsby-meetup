@@ -1,6 +1,7 @@
 import React from "react"
 import "../../styles/index.css"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import SEO from '../SEO'
 
 export default ({ pageHeader, children }) => {
   const data = useStaticQuery(graphql`
@@ -16,6 +17,7 @@ export default ({ pageHeader, children }) => {
 
   return (
     <>
+      <SEO pageTitle={pageHeader} />
       <div className="app-header">{data.site.siteMetadata.title}</div>
       <div className="page-container">
         <h1 className="header">{pageHeader}</h1>
